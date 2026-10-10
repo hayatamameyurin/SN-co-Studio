@@ -1,90 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>SN&amp;Co Studio | 製造業のためのテクノロジーパートナー</title>
+  <meta name="description" content="SN&amp;Co Studioは、IoT・データ・AIで製造現場を変える、製造業向けITベンチャーです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M4 24 L12 8 L20 24 L28 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"/></svg>
+        </span>
+        <span class="brand-name">SN&amp;Co <span>Studio</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="global-nav">
+        <a href="#solutions">Solutions</a>
+        <a href="#approach">Approach</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact" class="nav-cta">お問い合わせ</a>
+      </nav>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span>INDUSTRIAL TECH STUDIO</p>
+          <h1>
+            現場のデータを、<br>
+            <em>次の競争力</em>へ。
+          </h1>
+          <p class="lead">
+            SN&amp;Co Studioは、IoT・データ基盤・AIを組み合わせ、製造業の現場から経営までをつなぐテクノロジーパートナーです。
+            構想づくりから実装・運用まで、小さく速く、確実に変革を進めます。
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">相談してみる <span aria-hidden="true">→</span></a>
+            <a href="#solutions" class="btn btn-ghost">ソリューションを見る</a>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+
+        <div class="hero-panel" aria-hidden="true">
+          <div class="panel-head">
+            <span>LINE-02 / REALTIME</span>
+            <span class="live">● LIVE</span>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
+          <svg class="panel-chart" viewBox="0 0 320 120" preserveAspectRatio="none">
+            <polyline class="chart-line" points="0,90 20,84 40,88 60,70 80,74 100,58 120,62 140,50 160,54 180,40 200,46 220,34 240,38 260,26 280,30 300,20 320,22"/>
+            <polyline class="chart-base" points="0,100 320,100"/>
+          </svg>
+          <div class="panel-stats">
+            <div><span class="k">OEE</span><span class="v">稼働率</span></div>
+            <div><span class="k">QC</span><span class="v">品質</span></div>
+            <div><span class="k">ENERGY</span><span class="v">電力</span></div>
           </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          <div class="panel-foot">sensor → edge → cloud → insight</div>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">01 / SOLUTIONS</p>
+          <h2>製造業のDXを、<br class="sp">現場起点で。</h2>
+          <p>設備・人・データをつなぎ、見える化から自動化、予測まで。必要なところから段階的に導入できます。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-no">01</span>
+            <h3>スマートファクトリー / IoT</h3>
+            <p>既存設備へのセンサー後付けやPLC連携で、稼働状況をリアルタイムに可視化。止まらない工場を目指します。</p>
+            <ul class="tags"><li>IoT</li><li>Edge</li><li>PLC連携</li></ul>
+          </article>
+          <article class="card">
+            <span class="card-no">02</span>
+            <h3>データ基盤・可視化</h3>
+            <p>散らばった生産・品質・在庫データを統合し、現場と経営が同じ数字で判断できるダッシュボードを構築します。</p>
+            <ul class="tags"><li>Data Platform</li><li>BI</li></ul>
+          </article>
+          <article class="card">
+            <span class="card-no">03</span>
+            <h3>AI 品質検査・予知保全</h3>
+            <p>画像認識による外観検査や、振動・温度データからの故障予兆検知で、品質とメンテナンスを高度化します。</p>
+            <ul class="tags"><li>Computer Vision</li><li>ML</li></ul>
+          </article>
+          <article class="card">
+            <span class="card-no">04</span>
+            <h3>業務システム開発</h3>
+            <p>生産管理・工程管理・トレーサビリティなど、現場の業務にフィットするシステムをスピーディに開発します。</p>
+            <ul class="tags"><li>Web App</li><li>Cloud</li></ul>
+          </article>
+        </div>
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    </section>
+
+    <section class="approach" id="approach">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">02 / APPROACH</p>
+          <h2>小さく始めて、<br class="sp">速く広げる。</h2>
+          <p>大規模な一括導入ではなく、検証を重ねながら成果を積み上げるアジャイルな進め方を採用しています。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-no">STEP 01</span>
+            <h3>現場診断</h3>
+            <p>工場に足を運び、課題とデータの所在を一緒に洗い出します。</p>
+          </li>
+          <li>
+            <span class="step-no">STEP 02</span>
+            <h3>PoC</h3>
+            <p>効果の大きい領域に絞り、短期間で仮説を検証します。</p>
+          </li>
+          <li>
+            <span class="step-no">STEP 03</span>
+            <h3>実装</h3>
+            <p>検証結果をもとに、本番運用に耐えるシステムへ仕上げます。</p>
+          </li>
+          <li>
+            <span class="step-no">STEP 04</span>
+            <h3>運用・拡張</h3>
+            <p>運用データを分析し、他ラインや他拠点へ展開していきます。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="vision" id="vision">
+      <div class="container vision-inner">
+        <p class="section-label">03 / VISION</p>
+        <p class="vision-text">
+          ものづくりの知恵と、<br class="sp">ソフトウェアの速さを。
+        </p>
+        <p class="vision-sub">日本の製造業が持つ現場力を、テクノロジーで次の世代へつなぐ。それが私たちの使命です。</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-label">04 / CONTACT</p>
+          <h2>まずは課題を<br class="sp">お聞かせください。</h2>
+          <p>「何から始めればいいかわからない」という段階でも大歓迎です。</p>
+        </div>
+        <a href="mailto:info@snandco.net" class="btn btn-primary btn-large">お問い合わせ <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand-name">SN&amp;Co <span>Studio</span></span>
+      <p>&copy; <span id="year">2026</span> SN&amp;Co Studio. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var nav = document.getElementById('global-nav');
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
